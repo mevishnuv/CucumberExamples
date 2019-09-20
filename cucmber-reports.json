@@ -1,0 +1,117 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-19T06:59:27.375Z",
+        "line": 3,
+        "name": "Success Login",
+        "description": "",
+        "id": "login;success-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1216100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Enter \"sam\" and \"abcd21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sam\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"abcd21\"",
+                  "offset": 16
+                }
+              ],
+              "location": "Step.credentials(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Click on login button",
+            "match": {
+              "location": "Step.click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Home page is displayed",
+            "match": {
+              "location": "Step.home_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-19T06:59:27.386Z",
+        "line": 8,
+        "name": "Login failure",
+        "description": "",
+        "id": "login;login-failure",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 99700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter credentials",
+            "match": {
+              "location": "Step.enter_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on login button",
+            "match": {
+              "location": "Step.click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Home page is not displayed",
+            "match": {
+              "location": "Step.home_page_is_not_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "classpath:P1/login.feature",
+    "tags": []
+  }
+]
